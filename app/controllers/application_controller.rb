@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
-	protected_from_forgery with :exception
-	def hello
-		render "hello world"
-	end
+	  protect_from_forgery with: :exception
 end
+#git name : origin
+# micropost=Micropost.new content: "How're you", user_id: "1"
