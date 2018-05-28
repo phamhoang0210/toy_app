@@ -15,7 +15,11 @@ default: &default
 development:
   <<: *default
   database: db_toy_app
-  
+
+test:
+  <<: *default
+  database: toy_app_test
+
 production:
   <<: *default
   database: login_app_production

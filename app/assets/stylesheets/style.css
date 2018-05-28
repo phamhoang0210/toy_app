@@ -1,0 +1,63 @@
+.index {
+	padding: 10px;
+	border-bottom: 2px solid #000000;
+   box-shadow: 0px 5px 5px #666;
+	-moz-box-shadow: 0px 5px 5px #666;
+	margin-bottom: 20px;
+}
+.header{
+	padding: 10px;
+	border-bottom: 2px solid #000000;
+   box-shadow: 0px 5px 5px #666;
+	-moz-box-shadow: 0px 5px 5px #666;
+	margin-bottom: 20px;
+}
+.navbar-default .navbar-brand{
+	color: orange;
+	font-size: 30px;
+	font-weight: bold;
+}
+.navbar-default .navbar-brand a{
+	color: orange;
+}
+.header .menu li{
+   float: left;
+   padding: 15px;
+   font-size: 25px;
+   color: blue;
+   list-style: none;
+}
+.new_users{
+   border-bottom: 2px solid #000000;
+   box-shadow: 5px 5px 5px #666;
+	-moz-box-shadow: 5px 5px 5px #666;
+	-webkit-box-shadow: 5px 5px 5px #666;
+}
+.user_content{
+	padding: 20px;
+}
+.
+.title_edit_user{
+   border-bottom: 2px solid #000000;
+   box-shadow: 0px 5px 5px #666;
+	-moz-box-shadow: 0px 5px 5px #666;
+	margin-bottom: 20px;
+}
+.title_login{
+	   border-bottom: 2px solid #000000;
+   box-shadow: 0px 5px 5px #666;
+	-moz-box-shadow: 0px 5px 5px #666;
+	margin-bottom: 20px;
+}
+.title_login h1{
+     font-size: 25px;
+}
+.form_login h1{
+	text-align: center;
+	font-size: 30px;
+	color: #ff0000;
+	font-weight: bold;
+}
+.mess{
+	text-align: center;
+}
