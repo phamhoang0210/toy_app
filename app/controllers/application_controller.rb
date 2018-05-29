@@ -3,6 +3,10 @@ class ApplicationController < ActionController::Base
 
 	  #tro den ham module session_helper
 	  include SessionsHelper
+      # current user
+	  def current_user
+    	@current_user ||= User.find(session[:user_id]) if session[:user_id]
+  	  end
 
       #check login
 	  before_action :require_login

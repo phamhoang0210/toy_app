@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
+     before_action :logger_in, only: [:index, :edit, :update, :destroy]
 	def index
-		@users = User.all
+		@users = User.paginate(page: params[:page],:per_page => 15)
     end
 
     def new
@@ -39,8 +40,11 @@ class UsersController < ApplicationController
     end
 
     def destroy
-    	
+        User.find(params[:id]).destroy
+        flash[:success] = "User deleted"
+        redirect_to users_url
     end
+    
     private
     def users_params
        params.require(:user).permit :name, :email, :password, :password_confirmation

@@ -12,7 +12,7 @@
   <body>
     <div class="header">
       <div class="container">
-         <nav class="navbar navbar-default">
+         <nav class="navbar navbar-default" style="background-color: #ffffff;  border-color: #ffffff;">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -21,7 +21,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Toy_app</a>
+              <a class="navbar-brand" href="/">Toy_app</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -45,7 +45,18 @@
         </nav>
       </div>
     </div>
+    <div class="user">
+      <div class="container">
+        <div class="navbar-right">
+        <!-- check login -->
+         <% if current_user.present?%>
+         Welcome admin: <label><%= current_user.name %></label>
+         <% end %>
+         </div>
+      </div>
+    </div>
     <%= yield %>
+    <!-- show message -->
     <div class="mess">
           <% flash.each do |message_type, message| %>
           <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
